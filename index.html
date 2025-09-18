@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personality Test</title>
+
+    <!-- Google Font for better look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 🌟 Start Screen -->
+      <div class="screen active" id="start-screen">
+        <h1>Let's Test Your Personality!</h1>
+        <p>Answer 10 questions to discover your personality type</p>
+        <button id="start-btn">Start Test</button>
+      </div>
+
+      <!-- 🌟 Quiz Screen -->
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <h2 id="question-text">Question goes here</h2>
+          <div class="quiz-info">
+            <p>
+              Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="answers-container" class="answers-container">
+          <!-- Answer buttons will be inserted here by script.js -->
+        </div>
+
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+
+      <!-- 🌟 Result Screen -->
+      <div id="result-screen" class="screen">
+        <h1>Personality Test Results</h1>
+        <div class="result-info">
+          <div id="result-message">Your Personality Result</div>
+        </div>
+        <button id="restart-btn">Restart Test</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
